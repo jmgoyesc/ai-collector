@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: collector
+
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      username: root
+      password: example
+      database: collector
+      authentication-database: admin
+
+server:
+  port: 8050
+  error:
+    include-message: always
+
+management:
+  endpoint:
+    health:
+      probes:
+        enabled: true
+        add-additional-paths: true
+
+kubeshark:
+  websocket:
+    host: 127.0.0.1:8899
