@@ -5,7 +5,7 @@ This project collects the network traffic from Kubeshark and store in mongoDB.
 ## Build
 
 ```bash
-./gradlew jib --image=ghcr.io/jmgoyesc/ai-collector:0.0.5
+./gradlew jib --image=jmgoyesc/ai-collector:0.0.6
 ```
 
 ## MongoDB
